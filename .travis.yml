@@ -1,0 +1,16 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+language: objective-c
+
+install:
+  # too slow
+  #- bundle exec pod repo update --silent
+  - pod install --project-directory=Example
+
+script:
+  - set -o pipefail && xcodebuild test -workspace Example/DynamoSync.xcworkspace -scheme DynamoSync-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' ONLY_ACTIVE_ARCH=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+
+after_success: 
+  - bash <(curl -s https://codecov.io/bash)

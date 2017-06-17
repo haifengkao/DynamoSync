@@ -1,0 +1,19 @@
+PODS:
+  - DynamoSync (0.1.0)
+  - Kiwi (2.4.0)
+
+DEPENDENCIES:
+  - DynamoSync (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  DynamoSync:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DynamoSync: 76d8d7dfe7117603e6988182761d63e14d2e15e8
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+
+PODFILE CHECKSUM: d94c1ad4ffbfc1cdd4032291f430299ce93879ae
+
+COCOAPODS: 1.2.1

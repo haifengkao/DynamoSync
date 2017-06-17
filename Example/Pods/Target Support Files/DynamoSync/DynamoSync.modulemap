@@ -1,0 +1,6 @@
+framework module DynamoSync {
+  umbrella header "DynamoSync-umbrella.h"
+
+  export *
+  module * { export * }
+}
