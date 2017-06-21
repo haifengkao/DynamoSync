@@ -22,7 +22,7 @@
              tableName:(NSString*)tableName
             dictionary:(NSDictionary*)dict
          shouldReplace:(BOOL (^)(id oldValue, id newValue))shouldReplace
-            completion:(void (^)(NSDictionary* diff, NSError* error)) completion;
+            completion:(void (^)(NSDictionary* diff, NSError* error))completion;
 
 /**
   * @param diff the diff object between two dictionaries. it contains keys ("add", "delete", "replace")
