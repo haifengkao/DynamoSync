@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "DynamoSync.h"
 
 FOUNDATION_EXPORT double DynamoSyncVersionNumber;
 FOUNDATION_EXPORT const unsigned char DynamoSyncVersionString[];
